@@ -1,179 +1,147 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html><html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Malla Psicopedagogía IPCHILE</title>
   <style>
     body {
-      font-family: "Segoe UI", sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background: #fce4ec;
-      color: #4a148c;
       margin: 0;
-      padding: 20px;
-    }
-
-    h1 {
+      padding: 0;
       text-align: center;
-      color: #ad1457;
-      margin-bottom: 5px;
     }
-
-    h2 {
-      color: #6a1b9a;
+    h1 {
+      color: #880e4f;
       margin-top: 30px;
     }
-
+    p {
+      color: #6a1b9a;
+    }
+    .malla-horizontal {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 20px;
+    }
     .semestre {
-      margin-bottom: 20px;
-    }
-
-    .ramos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: wrap;
       gap: 10px;
-      margin-top: 10px;
-    }
-
-    .ramo {
+      justify-content: center;
       background: #f8bbd0;
-      padding: 12px;
+      padding: 10px;
+      border-radius: 16px;
+    }
+    .semestre h2 {
+      width: 100%;
+      text-align: left;
+      color: #7b1fa2;
+      margin: 0 0 10px 10px;
+    }
+    .ramo {
+      background: #e1bee7;
+      padding: 10px 15px;
       border-radius: 12px;
       box-shadow: 2px 2px 5px #ccc;
       cursor: pointer;
       transition: 0.3s;
+      min-width: 200px;
       text-align: center;
     }
-
     .ramo:hover {
-      background: #f06292;
+      background: #ce93d8;
       color: white;
     }
-
     .aprobado {
-      background: #ce93d8 !important;
+      background: #d1c4e9 !important;
       text-decoration: line-through;
-    }
-
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 0.9em;
-      color: #7b1fa2;
     }
   </style>
 </head>
 <body>
   <h1>Malla Psicopedagogía IPCHILE</h1>
-  <p style="text-align:center;">Haz clic en los ramos que ya aprobaste 💜</p>
+  <p>Haz clic en los ramos que ya aprobaste 💜</p>  <div class="malla-horizontal"><div class="semestre">
+  <h2>Semestre 1</h2>
+  <div class="ramo" onclick="toggle(this)">Bases biológicas y ciclo vital</div>
+  <div class="ramo" onclick="toggle(this)">Fundamentos de la educación</div>
+  <div class="ramo" onclick="toggle(this)">Introducción a la psicopedagogia</div>
+  <div class="ramo" onclick="toggle(this)">Psicología general</div>
+  <div class="ramo" onclick="toggle(this)">Taller de habilidades comunicacionales</div>
+  <div class="ramo" onclick="toggle(this)">Taller de nivelación de matemáticas</div>
+</div>
 
-  <!-- Semestre 1 -->
-  <div class="semestre">
-    <h2>Semestre 1</h2>
-    <div class="ramos">
-      <div class="ramo" onclick="toggle(this)">Bases biológicas y ciclo vital</div>
-      <div class="ramo" onclick="toggle(this)">Fundamentos de la educación</div>
-      <div class="ramo" onclick="toggle(this)">Introducción a la psicopedagogía</div>
-      <div class="ramo" onclick="toggle(this)">Psicología general</div>
-      <div class="ramo" onclick="toggle(this)">Taller de habilidades comunicacionales</div>
-      <div class="ramo" onclick="toggle(this)">Taller de nivelación de matemáticas</div>
-    </div>
-  </div>
+<div class="semestre">
+  <h2>Semestre 2</h2>
+  <div class="ramo" onclick="toggle(this)">Bases teóricas para la diversidad y la inclusión</div>
+  <div class="ramo" onclick="toggle(this)">Psicopedagogia en los diferentes grupos etarios</div>
+  <div class="ramo" onclick="toggle(this)">Herramientas tecnologicas</div>
+  <div class="ramo" onclick="toggle(this)">Neurociencia del aprendizaje</div>
+  <div class="ramo" onclick="toggle(this)">Psicopatologia y conducta humana</div>
+  <div class="ramo" onclick="toggle(this)">Práctica de observación</div>
+</div>
 
-  <!-- Semestre 2 -->
-  <div class="semestre">
-    <h2>Semestre 2</h2>
-    <div class="ramos">
-      <div class="ramo" onclick="toggle(this)">Bases teóricas para la diversidad y la inclusión</div>
-      <div class="ramo" onclick="toggle(this)">Psicopedagogía en los diferentes grupos etarios</div>
-      <div class="ramo" onclick="toggle(this)">Herramientas tecnológicas</div>
-      <div class="ramo" onclick="toggle(this)">Neurociencia del aprendizaje</div>
-      <div class="ramo" onclick="toggle(this)">Psicopatología y conducta humana</div>
-      <div class="ramo" onclick="toggle(this)">Práctica de observación</div>
-    </div>
-  </div>
+<div class="semestre">
+  <h2>Semestre 3</h2>
+  <div class="ramo" onclick="toggle(this)">Curriculum y diversidad</div>
+  <div class="ramo" onclick="toggle(this)">Evaluación de los procesos cognitivos I</div>
+  <div class="ramo" onclick="toggle(this)">Evaluación integral</div>
+  <div class="ramo" onclick="toggle(this)">Evaluación de los procesos socioafectivos</div>
+  <div class="ramo" onclick="toggle(this)">Estadística Psicopedagógica</div>
+  <div class="ramo" onclick="toggle(this)">Recursos informáticos para el aprendizaje</div>
+</div>
 
-  <!-- Semestre 3 -->
-  <div class="semestre">
-    <h2>Semestre 3</h2>
-    <div class="ramos">
-      <div class="ramo" onclick="toggle(this)">Currículum y diversidad</div>
-      <div class="ramo" onclick="toggle(this)">Evaluación de los procesos cognitivos I</div>
-      <div class="ramo" onclick="toggle(this)">Evaluación integral</div>
-      <div class="ramo" onclick="toggle(this)">Evaluación de los procesos socioafectivos</div>
-      <div class="ramo" onclick="toggle(this)">Estadística psicopedagógica</div>
-      <div class="ramo" onclick="toggle(this)">Recursos informáticos para el aprendizaje</div>
-    </div>
-  </div>
+<div class="semestre">
+  <h2>Semestre 4</h2>
+  <div class="ramo" onclick="toggle(this)">Evaluación de los procesos cognitivos II</div>
+  <div class="ramo" onclick="toggle(this)">Metodología de la lectoescritura</div>
+  <div class="ramo" onclick="toggle(this)">Metodología de la matemática</div>
+  <div class="ramo" onclick="toggle(this)">Planificación Psicopedagógica</div>
+  <div class="ramo" onclick="toggle(this)">Pensamiento innovador</div>
+  <div class="ramo" onclick="toggle(this)">Tecnología y ambientes virtuales del aprendizaje</div>
+</div>
 
-  <!-- Semestre 4 -->
-  <div class="semestre">
-    <h2>Semestre 4</h2>
-    <div class="ramos">
-      <div class="ramo" onclick="toggle(this)">Evaluación de los procesos cognitivos II</div>
-      <div class="ramo" onclick="toggle(this)">Metodología de la lectoescritura</div>
-      <div class="ramo" onclick="toggle(this)">Metodología de la matemática</div>
-      <div class="ramo" onclick="toggle(this)">Planificación psicopedagógica</div>
-      <div class="ramo" onclick="toggle(this)">Pensamiento innovador</div>
-      <div class="ramo" onclick="toggle(this)">Tecnología y ambientes virtuales del aprendizaje</div>
-    </div>
-  </div>
+<div class="semestre">
+  <h2>Semestre 5</h2>
+  <div class="ramo" onclick="toggle(this)">Evaluación de la lectoescritura</div>
+  <div class="ramo" onclick="toggle(this)">Evaluación de las habilidades matemáticas</div>
+  <div class="ramo" onclick="toggle(this)">Intervención de los procesos cognitivos</div>
+  <div class="ramo" onclick="toggle(this)">Intervención de los procesos socioafectivos</div>
+  <div class="ramo" onclick="toggle(this)">Práctica de diagnóstico</div>
+  <div class="ramo" onclick="toggle(this)">Psicopedagogia comunitaria</div>
+</div>
 
-  <!-- Semestre 5 -->
-  <div class="semestre">
-    <h2>Semestre 5</h2>
-    <div class="ramos">
-      <div class="ramo" onclick="toggle(this)">Evaluación de la lectoescritura</div>
-      <div class="ramo" onclick="toggle(this)">Evaluación de las habilidades matemáticas</div>
-      <div class="ramo" onclick="toggle(this)">Intervención de los procesos cognitivos</div>
-      <div class="ramo" onclick="toggle(this)">Intervención de los procesos socioafectivos</div>
-      <div class="ramo" onclick="toggle(this)">Práctica de diagnóstico</div>
-      <div class="ramo" onclick="toggle(this)">Psicopedagogía comunitaria</div>
-    </div>
-  </div>
+<div class="semestre">
+  <h2>Semestre 6</h2>
+  <div class="ramo" onclick="toggle(this)">Intervención de las habilidades matemáticas I</div>
+  <div class="ramo" onclick="toggle(this)">Intervención en familia y comunidad</div>
+  <div class="ramo" onclick="toggle(this)">Intervención de la lectoescritura I</div>
+  <div class="ramo" onclick="toggle(this)">Modelo de negocios</div>
+  <div class="ramo" onclick="toggle(this)">Elaboración de proyectos educacionales</div>
+  <div class="ramo" onclick="toggle(this)">Práctica de intervención</div>
+</div>
 
-  <!-- Semestre 6 -->
-  <div class="semestre">
-    <h2>Semestre 6</h2>
-    <div class="ramos">
-      <div class="ramo" onclick="toggle(this)">Intervención de las habilidades matemáticas I</div>
-      <div class="ramo" onclick="toggle(this)">Intervención en familia y comunidad</div>
-      <div class="ramo" onclick="toggle(this)">Intervención de la lectoescritura I</div>
-      <div class="ramo" onclick="toggle(this)">Modelo de negocios</div>
-      <div class="ramo" onclick="toggle(this)">Elaboración de proyectos educacionales</div>
-      <div class="ramo" onclick="toggle(this)">Práctica de intervención</div>
-    </div>
-  </div>
+<div class="semestre">
+  <h2>Semestre 7</h2>
+  <div class="ramo" onclick="toggle(this)">Estudio de caso</div>
+  <div class="ramo" onclick="toggle(this)">Ética profesional</div>
+  <div class="ramo" onclick="toggle(this)">Intervención de las habilidades matemáticas II</div>
+  <div class="ramo" onclick="toggle(this)">Intervención de la lectoescritura II</div>
+  <div class="ramo" onclick="toggle(this)">Metodología de la investigación</div>
+  <div class="ramo" onclick="toggle(this)">Psicopedagogia y prevención</div>
+</div>
 
-  <!-- Semestre 7 -->
-  <div class="semestre">
-    <h2>Semestre 7</h2>
-    <div class="ramos">
-      <div class="ramo" onclick="toggle(this)">Estudio de caso</div>
-      <div class="ramo" onclick="toggle(this)">Ética profesional</div>
-      <div class="ramo" onclick="toggle(this)">Intervención de las habilidades matemáticas II</div>
-      <div class="ramo" onclick="toggle(this)">Intervención de la lectoescritura II</div>
-      <div class="ramo" onclick="toggle(this)">Metodología de la investigación</div>
-      <div class="ramo" onclick="toggle(this)">Psicopedagogía y prevención</div>
-    </div>
-  </div>
+<div class="semestre">
+  <h2>Semestre 8</h2>
+  <div class="ramo" onclick="toggle(this)">Taller de integración profesional</div>
+  <div class="ramo" onclick="toggle(this)">Práctica profesional</div>
+</div>
 
-  <!-- Semestre 8 -->
-  <div class="semestre">
-    <h2>Semestre 8</h2>
-    <div class="ramos">
-      <div class="ramo" onclick="toggle(this)">Taller de integración profesional</div>
-      <div class="ramo" onclick="toggle(this)">Práctica profesional</div>
-    </div>
-  </div>
-
-  <footer>
-    Desarrollado por Dayanna 💜 | Psicopedagogía IPCHILE
-  </footer>
-
-  <script>
+  </div>  <script>
     function toggle(element) {
-      element.classList.toggle("aprobado");
+      element.classList.toggle('aprobado');
     }
-  </script>
-</body>
+  </script></body>
 </html>
